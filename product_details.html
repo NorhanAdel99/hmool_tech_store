@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="sass/main.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- ________________ // header // ________________ -->
+    <!-- header-after-login -->
+    <header>
+        <div class="container">
+            <div class="flex-between flex-wrap gap-20 py-3">
+                <div class="d-flex gap-20 flex-md-grow flex-between">
+                    <a href="index.html">
+                        <img src="imgs/logo.png" loading="lazy" alt="logo" class="logo">
+                    </a>
+                    <form action="#">
+                        <div class="position-relative">
+                            <input type="search" class="form-control searchInput">
+                            <div class="filter_icon" data-toggle="modal" data-target="#filterModal">
+                                <i class="fa-solid fa-arrow-up-wide-short"></i>
+                                <span> ترتيب المنتجات </span>
+                            </div>
+                        </div>
+                    </form>
+                    <img src="imgs/menu-bar.png" alt="" class="menuBar">
+                </div>
+                <div class="d-flex align-items-center gap-10 justify-content-sm-end justify-content-start flex-md-grow">
+
+                    <div class="dropdown  position-relative userDropdown">
+                        <div class=" dropdown-toggle headerDropdown " data-toggle="dropdown" aria-expanded="false">
+                            <p> محمد اشرف </p>
+                            <i class="fa-regular fa-user f-15 m-end-5"></i>
+                        </div>
+                        <div class="dropdown-menu f-12">
+                            <a href="personal_account.html" class="dropdown-item  flex-between " href="#">
+                                <span> الملف الشخصي </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="favourites.html" class="dropdown-item  flex-between" href="#">
+                                <span> المفضلة </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="add_product.html" class="dropdown-item  flex-between" href="#">
+                                <span> طلب توفير منتج </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="branches.html" class="dropdown-item  flex-between" href="#">
+                                <span>فروعي</span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+
+                            </a>
+                            <a href="financialـreports.html" class="dropdown-item  flex-between" href="#">
+                                <span> التقارير المالية </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="wallet.html" class="dropdown-item  flex-between" href="#">
+                                <span>المحفظة</span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="settings.html" class="dropdown-item  flex-between" href="#">
+                                <span> الاعدادات المالية </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="Complaintsـandـsuggestions.html" class="dropdown-item  flex-between" href="#">
+                                <span>الشكاوي والمقترحات </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="index.html" class="text-danger dropdown-item  flex-between " href="#">
+                                <span> تسجيل الخروج </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdown  position-relative  afterNone">
+                        <div class=" dropdown-toggle  circle_link" data-toggle="dropdown" aria-expanded="false">
+                            <img src="imgs/list.png" alt="" class="headerIcon">
+                        </div>
+                        <div class="dropdown-menu f-12">
+                            <a href="current_orders.html" class="dropdown-item  flex-between" href="#">
+                                <span> طلبات حالية </span>
+                                <i class="fa-solid fa-chevron-left f-10"></i>
+                            </a>
+                            <a href="scheduled_orders.html" class="dropdown-item  flex-between" href="#">
+                                <span> طلبات مجدولة </span>
+                                <i class="fa-solid fa-chevron-left f-10"></i>
+                            </a>
+                            <a href="finished_orders.html" class="dropdown-item  flex-between" href="#">
+                                <span> طلبات منتهية </span>
+                                <i class="fa-solid fa-chevron-left f-10"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <a href="cartـwithout_product.html" class="circle_link position-relative">
+                        <img src="imgs/shopping-cart.png" alt="" class="headerIcon">
+                        <div class="containNum">3</div>
+                    </a>
+                    <a href="" class="circle_link position-relative">
+                        <img src="imgs/bell.png" alt="" class="headerIcon">
+                        <div class="containNum">35</div>
+
+                    </a>
+                    <div class="dropdown">
+                        <div class="dropdown-toggle headerDropdown  position-relative" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <p class="ar">Ar</p>
+                            <img src="imgs/saudi-arabia.png" alt="" class="langImg m-end-5">
+                        </div>
+                        <div class="dropdown-menu  f-13 m-end-10">
+                            <a class="dropdown-item d-flex align-items-center justify-content-between position-relative"
+                                href="#">
+                                <p class="">AR</p>
+                            </a>
+
+                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                <p class="">EN</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="Products_nav py-3 px-4">
+            <img src="imgs/cross.png" class="closeMenu">
+            <a href="all_products.html" class="text-dark ">
+                جميع المنتجات
+            </a>
+            <a href="offers.html" class="text-dark">
+                عروض التوفير
+            </a>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark">المواد الغذائية</p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> المشروبات</p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown">
+                    الحلويات الخفيفة
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        <p class="">
+                            اسم القسم الفرعي
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> منكهات وصوصات</p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        <p class="">
+                            اسم القسم الفرعي
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> الالبان والاجبان </p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> اللحوم والدواجن </p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> خضروات وفواكه </p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> المنظفات والعناية المنزلية </p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> التغليف والبلاستيك </p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> العناية الشخصية </p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- _____________ // body-content // _____________ -->
+    <div class="body-content">
+        <div class="s-space">
+            <div class="container">
+                <h5 class=" underline_title ">
+                    تفاصيل المنتج
+                </h5>
+                <div class="row justify-content-center ">
+                    <div class="col-md-3">
+                        <div class="shadow2 p-3 flex-center rad-5">
+                            <img src="imgs/p.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="s-space">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="flex-between mb-2">
+                                <div>
+                                    <h6> ليز ملح </h6>
+                                    <span class="text-muted">50*24</span>
+                                </div>
+                                <div class="circle_link double">
+                                    <i class="fa-regular fa-heart f-20"></i>
+
+                                </div>
+
+                            </div>
+                            <div class="flex-between mb-2">
+                                <div>
+                                    <h6 class="mb-2"> الكمية</h6>
+                                    <div class="product_card active">
+                                        <span> 24</span>
+                                    </div>
+                                </div>
+                                <div class="Quantity flex-between gap-20">
+                                    <div class="whiteCircle increment">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <span class="counterNum">0</span>
+                                    <div class="whiteCircle decrement">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="mb-2"> الحجم</h6>
+                            <div class="d-flex align-items-center flex-wrap gap-10 mb-2">
+                                <label for="rad1">
+                                    <input type="radio" id="rad1" class="radInput" name="group1" hidden>
+                                    <div class="product_card ">
+                                        <span> 40</span> <span> جرام</span>
+                                    </div>
+                                </label>
+                                <label for="rad2">
+                                    <input type="radio" id="rad2" class="radInput" name="group1" hidden>
+                                    <div class="product_card ">
+                                        <span> 20</span><span>جرام</span>
+                                    </div>
+                                </label>
+                                <label for="rad3">
+                                    <input type="radio" id="rad3" class="radInput" name="group1" hidden checked>
+                                    <div class="product_card ">
+                                        <span> 100</span><span>جرام</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <h6 class="mb-2"> السمات</h6>
+
+                            <div class="d-flex align-items-center flex-wrap gap-10 mb-2">
+                                <label for="theme1">
+                                    <input type="radio" id="theme1" class="radInput" name="themes" hidden>
+                                    <div class="product_card ">
+                                        <span> السمة</span>
+                                    </div>
+                                </label>
+                                <label for="theme2">
+                                    <input type="radio" id="theme2" class="radInput" name="themes" hidden checked>
+                                    <div class="product_card ">
+                                        <span> السمة</span>
+                                    </div>
+                                </label>
+                                <label for="theme3">
+                                    <input type="radio" id="theme3" class="radInput" name="themes" hidden>
+                                    <div class="product_card ">
+                                        <span> السمة</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="flex-between flex-wrap">
+                                <div class="product_card gap-10 ">
+                                    <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                    <div class="text-danger"><s><span>18</span> <span>ريال</span> </s></div>
+                                    <div> (12 ريال للحبة)</div>
+                                </div>
+                                <img src="imgs/vat (1).png" alt="" class="vatImg">
+                                <a href="" class="btn main_btn d-flex justify-content-between lg_btn px-2">
+                                    <div>
+                                        <span>48</span> <span> ريال</span>
+                                    </div>
+                                    <div>
+                                        اضف الي السلة
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-space">
+                    <div class="container">
+                        <div class="flex-between mb-4">
+                            <h6 class="text-center mb">
+                                منتجات مشابهه
+                            </h6>
+                            <a href="#" class="main_color"> المزيد </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-4 px-sm-1">
+                                <div class="product_box mb-3 position-relative">
+                                    <i class="fa-regular fa-heart like f-20"></i>
+                                    <img src="imgs/p.png" alt="" class="product_img">
+                                    <div class="broduct_content p-2 mt-2">
+                                        <h6 class="mb-1"> منتج </h6>
+                                        <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                        <div class="d-flex gap-10 mb-1">
+                                            <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                            <div class="text-danger"><s><span>18</span> <span>ريال</span> </s></div>
+                                        </div>
+                                        <div class="addToCartBtn">
+                                            <a href="product_details.html" class="btn main_btn gap-1 w-100 ">
+                                                <i class="fa-solid fa-cart-plus"></i>
+                                                <span> اضف الي السلة</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 px-sm-1">
+                                <div class="product_box mb-3 position-relative">
+                                    <i class="fa-regular fa-heart like f-20"></i>
+                                    <img src="imgs/p.png" alt="" class="product_img">
+                                    <div class="broduct_content p-2 mt-2">
+                                        <h6 class="mb-1"> منتج </h6>
+                                        <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                        <div class="d-flex gap-10 mb-1">
+                                            <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                            <div class="text-danger"><s><span>18</span> <span>ريال</span> </s></div>
+                                        </div>
+                                        <div class="addToCartBtn">
+                                            <a href="product_details.html" class="btn main_btn gap-1 w-100 ">
+                                                <i class="fa-solid fa-cart-plus"></i>
+                                                <span> اضف الي السلة</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 px-sm-1">
+                                <div class="product_box mb-3 position-relative">
+                                    <i class="fa-regular fa-heart like f-20"></i>
+                                    <img src="imgs/p.png" alt="" class="product_img">
+                                    <div class="broduct_content p-2 mt-2">
+                                        <h6 class="mb-1"> منتج </h6>
+                                        <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                        <div class="d-flex gap-10 mb-1">
+                                            <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                            <div class="text-danger"><s><span>18</span> <span>ريال</span> </s></div>
+                                        </div>
+                                        <div class="addToCartBtn">
+                                            <a href="product_details.html" class="btn main_btn gap-1 w-100 ">
+                                                <i class="fa-solid fa-cart-plus"></i>
+                                                <span> اضف الي السلة</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 px-sm-1">
+                                <div class="product_box mb-3 position-relative">
+                                    <i class="fa-regular fa-heart like f-20"></i>
+                                    <img src="imgs/p.png" alt="" class="product_img">
+                                    <div class="broduct_content p-2 mt-2">
+                                        <h6 class="mb-1"> منتج </h6>
+                                        <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                        <div class="d-flex gap-10 mb-1">
+                                            <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                            <div class="text-danger"><s><span>18</span> <span>ريال</span> </s></div>
+                                        </div>
+                                        <div class="addToCartBtn">
+                                            <a href="product_details.html" class="btn main_btn gap-1 w-100 ">
+                                                <i class="fa-solid fa-cart-plus"></i>
+                                                <span> اضف الي السلة</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 px-sm-1">
+                                <div class="product_box mb-3 position-relative">
+                                    <i class="fa-regular fa-heart like f-20"></i>
+                                    <img src="imgs/p.png" alt="" class="product_img">
+                                    <div class="broduct_content p-2 mt-2">
+                                        <h6 class="mb-1"> منتج </h6>
+                                        <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                        <div class="d-flex gap-10 mb-1">
+                                            <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                            <div class="text-danger"><s><span>18</span> <span>ريال</span> </s></div>
+                                        </div>
+                                        <div class="addToCartBtn">
+                                            <a href="product_details.html" class="btn main_btn gap-1 w-100 ">
+                                                <i class="fa-solid fa-cart-plus"></i>
+                                                <span> اضف الي السلة</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 px-sm-1">
+                                <div class="product_box mb-3 position-relative">
+                                    <i class="fa-regular fa-heart like f-20"></i>
+                                    <img src="imgs/p.png" alt="" class="product_img">
+                                    <div class="broduct_content p-2 mt-2">
+                                        <h6 class="mb-1"> منتج </h6>
+                                        <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                        <div class="d-flex gap-10 mb-1">
+                                            <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                            <div class="text-danger"><s><span>18</span> <span>ريال</span> </s></div>
+                                        </div>
+                                        <div class="addToCartBtn">
+                                            <a href="product_details.html" class="btn main_btn gap-1 w-100 ">
+                                                <i class="fa-solid fa-cart-plus"></i>
+                                                <span> اضف الي السلة</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ________________ // footer // ________________ -->
+        <footer>
+            <div class="container">
+                <div class="footer-content s-space">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="mb-3"> من نحن</h4>
+                            <p class="text-muted mb-3"> هذا النص هو مثال لنص ممكن ان يستخدم هذا النص النص هو مثال لنص مم
+                                هذا
+                                النص هو مثال لنص ممكن ان يستخدم هذا النص النص هوكن ان يستخدم هذا النص مثال لنص ممكن ان
+                                يستخدم</p>
+                            <div class="d-flex gap-10 flex-wrap mb-3">
+                                <a href="https://apps.apple.com">
+                                    <img src="imgs/app-store.png" alt="app-store" class="storesImg">
+                                </a>
+                                <a href="https://play.google.com/store">
+                                    <img src="imgs/googleplay.png" alt="google-play" class="storesImg">
+                                </a>
+                            </div>
+                            <div class="mb-3 f-15">
+                                <span> الرقم الضريبي : </span> <span>123455</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="mb-3"> روابط هامة</h4>
+                            <ul class="d-flex flex-wrap">
+                                <li class="flex-b-50 mb-3 text-nowrap">
+                                    <a href="privacyـpolicy.html" class="main_color f-15"> سياسة الخصوصية</a>
+                                </li>
+                                <li class="flex-b-50 mb-3 text-nowrap">
+                                    <a href="terms&condition.html" class="main_color f-15"> الشروط والاحكام</a>
+                                </li>
+                                <li class="flex-b-50 mb-3 text-nowrap">
+                                    <a href="about_us.html" class="main_color f-15"> عن حمول تك </a>
+                                </li>
+                                <li class="flex-b-50 mb-3 text-nowrap">
+                                    <a href="contact_us.html" class="main_color f-15"> تواصل معنا </a>
+                                </li>
+                                <li class="flex-b-50 mb-3 text-nowrap">
+                                    <a href="provider.html" class="main_color f-15"> سجل معنا كمورد </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="mb-2"> طرق الدفع </h4>
+                            <div class="d-flex gap-10 flex-wrap align-items-center">
+                                <img src="imgs/mada.png" alt="payment" class="payment">
+                                <img src="imgs/visa.png" alt="payment" class="payment">
+                                <img src="imgs/mastercard-26149.png" alt="mada" class="payment">
+                                <img src="imgs/pay.png" alt="payment" class="payment">
+                                <img src="imgs/stc.png" alt="payment" class="payment">
+                                <img src="imgs/pay.png" alt="payment" class="payment">
+                                <!-- <img src="imgs/hand.png" alt="payment" class="payment">
+                                <img src="imgs/home.png" alt="payment" class="payment"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right py-3 d-flex justify-content-sm-between justify-content-center flex-wrap gap-30">
+                    <a href="index.html" class="main_color font-bolder">
+                        <h6> جميع الحقوق محفوظة لمؤسسة حمول تك @2023</h6>
+                    </a>
+                    <div class="d-flex gap-10 align-items-center">
+                        <a href="#">
+                            <img src="imgs/facebook.png" alt="" class="social">
+                        </a>
+                        <a href="#">
+                            <img src="imgs/twitter.png" alt="" class="social">
+                        </a>
+                        <a href="#">
+                            <img src="imgs/tiktok.png" alt="" class="social">
+                        </a>
+                        <a href="#">
+                            <img src="imgs/youtube.png" alt="" class="social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- ________________ // loader // ________________ -->
+        <div class="loader">
+            <img src="imgs/logo.png" alt="" class="logoWhite wow  animate__animated animate__jackInTheBox">
+        </div>
+        <!-- _______________ // filter-modal // _______________ -->
+        <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-7">
+                            <div class="modal-body">
+                                <h6 class="main_color mb-3"> <span class="m-end-5"> ترتيب المنتجات </span> <i
+                                        class="fa-solid fa-arrow-up-wide-short"></i></h6>
+                                <form id="filterForm" action="#">
+                                    <div class="form-group">
+                                        <label for="name"> المدينة</label>
+                                        <select class="select2 form-control form-input" name="state">
+                                            <option value="AL"> المدينة </option>
+                                            <option value="WY"> المدينة </option>
+                                            <option value="WY"> المدينة </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="name"> العلامة التجارية</label>
+                                        <select class="select2 form-control form-input" name="state">
+                                            <option value="AL"> براند </option>
+                                            <option value="WY"> براند </option>
+                                            <option value="WY"> براند </option>
+                                        </select>
+                                    </div>
+                                    <label class="d-flex gap-5 align-items-center form-group">
+                                        <input type="checkbox" class="checkbox" hidden>
+                                        <div class="checkboxShape">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <span>
+                                            الاكثر مبيعا
+                                        </span>
+                                    </label>
+                                    <button type="button" form="filterForm" class="btn main-script w-100 main_btn"
+                                        data-dismiss="modal">
+                                        تأكيد</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- _______________ // end_Page // _______________ -->
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/select2.min.js"></script>
+        <!-- // main-script //  -->
+        <script src="js/script.js"></script>
+        <script>
+            ///////// $$ add icon to btn $$ //////////
+            const mediaQuery = window.matchMedia('(max-width: 768px)');
+            function handleTabletChange(e) {
+                var newLogIn = document.querySelector('.register');
+                var login = document.querySelector('.logIn');
+                let userDropdown = document.querySelector('.userDropdown')
+                if (newLogIn && login) {
+                    if (e.matches) {
+                        var newLoginIcon = `<i class="fa-solid fa-right-to-bracket"></i>`;
+                        var userIcon = `<i class="fa-solid fa-user f-15"></i>`;
+                        newLogIn.innerHTML = newLoginIcon;
+                        login.innerHTML = userIcon;
+                        newLogIn.style.width = '30px';
+                        newLogIn.style.height = '30px';
+                        newLogIn.style.borderRadius = '50%'
+                        newLogIn.style.padding = '18px'
+
+                        login.style.width = '30px';
+                        login.style.height = '30px';
+                        login.style.borderRadius = '50%'
+                        login.style.padding = '18px'
+                    } else {
+                        newLogIn.innerHTML = 'حساب  جديد';
+                        login.innerHTML = 'تسجيل الدخول ';
+                    }
+                } else {
+                    if (e.matches) {
+                        userDropdown.querySelector('p').style.display = 'none'
+
+                    } else {
+                        userDropdown.querySelector('p').style.display = 'block'
+
+                    }
+
+                }
+            }
+            mediaQuery.addListener(handleTabletChange)
+            handleTabletChange(mediaQuery)
+            ///////// $$ add icon to btn $$ //////////
+            let target = 0;
+            let collapse = 0;
+            function handleNav(e) {
+                if (e.matches) {
+                    document.querySelectorAll('.Products_nav  .dropdown').forEach(el => {
+                        el.classList.remove('dropdown')
+                        el.classList.add('text-center')
+                        el.classList.add('cursor_pointer')
+
+                        let p = el.querySelectorAll('.dropdown-toggle')
+                        p.forEach((menu) => {
+                            menu.classList.remove('dropdown-toggle')
+                            menu.setAttribute("data-toggle", "collapse");
+                            let dataTarget = `#collapseExample${target++}`;
+                            console.log(dataTarget)
+                            menu.setAttribute("data-target", `${dataTarget}`);
+                            menu.setAttribute("aria-controls", "collapseExample");
+                        })
+                        // data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                        let dropdownToggle = el.querySelectorAll('.dropdown-menu')
+                        dropdownToggle.forEach((menu) => {
+                            menu.classList.remove('dropdown-menu')
+                            let id = `collapseExample${collapse++}`;
+                            menu.classList.add('collapse')
+                            menu.id = `${id}`
+
+                        })
+                    })
+                } else {
+                    return
+                }
+            }
+            mediaQuery.addListener(handleNav)
+
+            handleNav(mediaQuery);
+            document.querySelector('.menuBar').onclick = function () {
+                document.querySelector('.Products_nav').classList.add('active')
+            }
+            document.querySelector('.closeMenu').onclick = function () {
+                document.querySelector('.Products_nav').classList.remove('active')
+
+            }
+        </script>
+        <script>
+            // ///////////////////////////////////
+            $(document).ready(function () {
+                $('.select2').select2();
+            });
+            //    toggle-fav
+            document.querySelectorAll('.fa-heart.like').forEach(el => {
+                el.onclick = function () {
+                    this.classList.toggle("text-danger")
+
+                }
+            })
+          
+            document.querySelectorAll('.increment').forEach((el) => {
+                el.onclick = function () {
+                    let counter = parseInt(this.nextElementSibling.innerHTML);
+                   
+                    if (counter  >= 20 ){
+                        return this.nextElementSibling.innerHTML = 0
+                    }else if (counter  = 20 )  {
+                        return parseInt(this.nextElementSibling.innerHTML++);
+                    }
+                }
+
+            })
+         
+            document.querySelectorAll('.decrement').forEach((el) => {
+                el.onclick = function () {
+                    let counter = parseInt(this.previousElementSibling.innerHTML);
+                    if (counter  <= 1 ){
+                        return this.previousElementSibling.innerHTML = 0
+
+                    }else if (counter  = 20)  {
+                        return parseInt(this.previousElementSibling.innerHTML--);
+
+                    }
+                }
+
+            })
+
+        </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="sass/main.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- ________________ // header // ________________ -->
+    <!-- header-after-login -->
+    <header>
+        <div class="container">
+            <div class="flex-between flex-wrap gap-20 py-3">
+                <div class="d-flex gap-20 flex-md-grow flex-between">
+                    <a href="index.html">
+                        <img src="imgs/logo.png" loading="lazy" alt="logo" class="logo">
+                    </a>
+                    <form action="#">
+                        <div class="position-relative">
+                            <input type="search" class="form-control searchInput">
+                            <div class="filter_icon" data-toggle="modal" data-target="#filterModal">
+                                <i class="fa-solid fa-arrow-up-wide-short"></i>
+                                <span> ترتيب المنتجات </span>
+                            </div>
+                        </div>
+                    </form>
+                    <img src="imgs/menu-bar.png" alt="" class="menuBar">
+                </div>
+                <div class="d-flex align-items-center gap-10 justify-content-sm-end justify-content-start flex-md-grow">
+
+                    <div class="dropdown  position-relative userDropdown">
+                        <div class=" dropdown-toggle headerDropdown " data-toggle="dropdown" aria-expanded="false">
+                            <p> محمد اشرف </p>
+                            <i class="fa-regular fa-user f-15 m-end-5"></i>
+                        </div>
+                        <div class="dropdown-menu f-12">
+                            <a href="personal_account.html" class="dropdown-item  flex-between " href="#">
+                                <span> الملف الشخصي </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="favourites.html" class="dropdown-item  flex-between" href="#">
+                                <span> المفضلة </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="add_product.html" class="dropdown-item  flex-between" href="#">
+                                <span> طلب توفير منتج </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="branches.html" class="dropdown-item  flex-between" href="#">
+                                <span>فروعي</span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+
+                            </a>
+                            <a href="financialـreports.html" class="dropdown-item  flex-between" href="#">
+                                <span> التقارير المالية </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="wallet.html" class="dropdown-item  flex-between" href="#">
+                                <span>المحفظة</span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="settings.html" class="dropdown-item  flex-between" href="#">
+                                <span> الاعدادات المالية </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="Complaintsـandـsuggestions.html" class="dropdown-item  flex-between" href="#">
+                                <span>الشكاوي والمقترحات </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+                            </a>
+                            <a href="index.html" class="text-danger dropdown-item  flex-between " href="#">
+                                <span> تسجيل الخروج </span>
+                                <i class="fa-solid fa-chevron-left f-10 rotateArrow"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdown  position-relative  afterNone">
+                        <div class=" dropdown-toggle  circle_link" data-toggle="dropdown" aria-expanded="false">
+                            <img src="imgs/list.png" alt="" class="headerIcon">
+                        </div>
+                        <div class="dropdown-menu f-12">
+                            <a href="current_orders.html" class="dropdown-item  flex-between" href="#">
+                                <span> طلبات حالية </span>
+                                <i class="fa-solid fa-chevron-left f-10"></i>
+                            </a>
+                            <a href="scheduled_orders.html" class="dropdown-item  flex-between" href="#">
+                                <span> طلبات مجدولة </span>
+                                <i class="fa-solid fa-chevron-left f-10"></i>
+                            </a>
+                            <a href="finished_orders.html" class="dropdown-item  flex-between" href="#">
+                                <span> طلبات منتهية </span>
+                                <i class="fa-solid fa-chevron-left f-10"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <a href="cartـwithout_product.html" class="circle_link position-relative">
+                        <img src="imgs/shopping-cart.png" alt="" class="headerIcon">
+                        <div class="containNum">3</div>
+                    </a>
+                    <a href="" class="circle_link position-relative">
+                        <img src="imgs/bell.png" alt="" class="headerIcon">
+                        <div class="containNum">35</div>
+
+                    </a>
+                    <div class="dropdown">
+                        <div class="dropdown-toggle headerDropdown  position-relative" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <p class="ar">Ar</p>
+                            <img src="imgs/saudi-arabia.png" alt="" class="langImg m-end-5">
+                        </div>
+                        <div class="dropdown-menu  f-13 m-end-10">
+                            <a class="dropdown-item d-flex align-items-center justify-content-between position-relative"
+                                href="#">
+                                <p class="">AR</p>
+                            </a>
+
+                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                <p class="">EN</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="Products_nav py-3 px-4">
+            <img src="imgs/cross.png" class="closeMenu">
+            <a href="all_products.html" class="text-dark ">
+                جميع المنتجات
+            </a>
+            <a href="offers.html" class="text-dark">
+                عروض التوفير
+            </a>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark">المواد الغذائية</p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> المشروبات</p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown">
+                    الحلويات الخفيفة
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        <p class="">
+                            اسم القسم الفرعي
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> منكهات وصوصات</p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        <p class="">
+                            اسم القسم الفرعي
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> الالبان والاجبان </p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> اللحوم والدواجن </p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> خضروات وفواكه </p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> المنظفات والعناية المنزلية </p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> التغليف والبلاستيك </p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class=" dropdown-toggle headerDropdown  position-relative text-dark " data-toggle="dropdown"
+                    aria-expanded="false">
+                    <p class="text-dark"> العناية الشخصية </p>
+
+                </div>
+                <div class="dropdown-menu f-12">
+                    <a class="dropdown-item  text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+
+                    <a class="dropdown-item text-center" href="#">
+                        اسم القسم الفرعي
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- _____________ // body-content // _____________ -->
+    <div class="body-content">
+        <div class="s-space">
+            <div class="container">
+                <h6 class=" underline_title ">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb p-0 m-0">
+                            <li class="breadcrumb-item"><a class=" main_color" href="#"> الطلبات </a></li>
+                            <li class="breadcrumb-item"><a class=" main_color" href="current_orders.html"> الطلبات
+                                    الحالية </a></li>
+                            <li class="breadcrumb-item active" aria-current="page"> تفاصيل الطلب </li>
+                        </ol>
+                    </nav>
+                </h6>
+                <div class="flex-center mb-4">
+                    <img src="imgs/step1.png" alt="" class="stepImg">
+                </div>
+                <h5 class="text-center f-15 font-bolder mb-3"> <span> الحالة : </span> <span class="main_color"> تم
+                        التأكيد </span> </h5>
+                <div class="row justify-content-center m-0 p-0">
+                    <div class="col-md-8 m-0 p-0 ">
+                        <!-- in case schedule orders -->
+                        <!-- <div class="shadow rad-10 p-3 m-0 mb-3 text-center main_color">
+                            <h6>
+                                قامت الادارة بقبول طلبك
+                            </h6>
+                        </div> -->
+                        <div class="shadow rad-5 p-3 m-0 mb-3">
+                            <div class="flex-between mb-2 flex-wrap gap-10">
+                                <h6 class="main_color"> <span> التوصيل : </span> <span> الجمعة 20 يونيو </span></h6>
+                                <div class="text-danger f-10"> الغاء الطلب فقط قبل بدأ التجهيز </div>
+                            </div>
+                            <div class="text_gray ">
+                                وقت التوصيل خلال ساعتين
+                            </div>
+                        </div>
+                        <div class="row m-0 p-0">
+                            <div class="col-lg-3 col-md-6 px-sm-1">
+                                <div class="product_box mb-3 position-relative">
+                                    <i class="fa-regular fa-heart like f-20"></i>
+                                    <img src="imgs/p.png" alt="" class="product_img">
+                                    <div class="broduct_content p-2 mt-2">
+                                        <div class="flex-between">
+                                            <h6 class="mb-1"> منتج </h6>
+                                            <div class="quntityBorder">
+                                                <span> الكمية : </span><span> 5 </span>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                        <div class="d-flex gap-10 mb-1">
+                                            <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                            <div class="text-danger"><s><span>18</span> <span>ريال</span> </s></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 px-sm-1">
+                                <div class="product_box mb-3 position-relative">
+                                    <i class="fa-regular fa-heart like f-20"></i>
+                                    <img src="imgs/p.png" alt="" class="product_img">
+                                    <div class="broduct_content p-2 mt-2">
+                                        <div class="flex-between">
+                                            <h6 class="mb-1"> منتج </h6>
+                                            <div class="quntityBorder">
+                                                <span> الكمية : </span><span> 5 </span>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                        <div class="d-flex gap-10 mb-1">
+                                            <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                            <div class="text-danger"><s><span>18</span> <span>ريال</span> </s></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 px-sm-1">
+                                <div class="product_box mb-3 position-relative">
+                                    <i class="fa-regular fa-heart like f-20"></i>
+                                    <img src="imgs/p.png" alt="" class="product_img">
+                                    <div class="broduct_content p-2 mt-2">
+                                        <div class="flex-between">
+                                            <h6 class="mb-1"> منتج </h6>
+                                            <div class="quntityBorder">
+                                                <span> الكمية : </span><span> 5 </span>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                        <div class="d-flex gap-10 mb-1">
+                                            <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                            <div class="text-danger"><s><span>18</span> <span>ريال</span> </s></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 px-sm-1">
+                                <div class="product_box mb-3 position-relative">
+                                    <i class="fa-regular fa-heart like f-20"></i>
+                                    <img src="imgs/p.png" alt="" class="product_img">
+                                    <div class="broduct_content p-2 mt-2">
+                                        <div class="flex-between">
+                                            <h6 class="mb-1"> منتج </h6>
+                                            <div class="quntityBorder">
+                                                <span> الكمية : </span><span> 5 </span>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                        <div class="d-flex gap-10 mb-1">
+                                            <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                            <div class="text-danger"><s><span>18</span> <span>ريال</span> </s></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="text-center showMore mb-4">
+                    <i class="fa-solid fa-circle-chevron-down main_color f-30"></i>
+                </div>
+
+                <div class="overflow-hidden">
+                    <div class="containMoreCard">
+                        <div class="row justify-content-center m-0 ">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 px-sm-1">
+                                        <div class="product_box mb-3 position-relative">
+                                            <i class="fa-regular fa-heart like f-20"></i>
+                                            <img src="imgs/p.png" alt="" class="product_img">
+                                            <div class="broduct_content p-2 mt-2">
+                                                <div class="flex-between">
+                                                    <h6 class="mb-1"> منتج </h6>
+                                                    <div class="quntityBorder">
+                                                        <span> الكمية : </span><span> 5 </span>
+                                                    </div>
+                                                </div>
+                                                <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                                <div class="d-flex gap-10 mb-1">
+                                                    <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                                    <div class="text-danger"><s><span>18</span> <span>ريال</span> </s>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 px-sm-1">
+                                        <div class="product_box mb-3 position-relative">
+                                            <i class="fa-regular fa-heart like f-20"></i>
+                                            <img src="imgs/p.png" alt="" class="product_img">
+                                            <div class="broduct_content p-2 mt-2">
+                                                <div class="flex-between">
+                                                    <h6 class="mb-1"> منتج </h6>
+                                                    <div class="quntityBorder">
+                                                        <span> الكمية : </span><span> 5 </span>
+                                                    </div>
+                                                </div>
+                                                <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                                <div class="d-flex gap-10 mb-1">
+                                                    <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                                    <div class="text-danger"><s><span>18</span> <span>ريال</span> </s>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 px-sm-1">
+                                        <div class="product_box mb-3 position-relative">
+                                            <i class="fa-regular fa-heart like f-20"></i>
+                                            <img src="imgs/p.png" alt="" class="product_img">
+                                            <div class="broduct_content p-2 mt-2">
+                                                <div class="flex-between">
+                                                    <h6 class="mb-1"> منتج </h6>
+                                                    <div class="quntityBorder">
+                                                        <span> الكمية : </span><span> 5 </span>
+                                                    </div>
+                                                </div>
+                                                <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                                <div class="d-flex gap-10 mb-1">
+                                                    <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                                    <div class="text-danger"><s><span>18</span> <span>ريال</span> </s>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 px-sm-1">
+                                        <div class="product_box mb-3 position-relative">
+                                            <i class="fa-regular fa-heart like f-20"></i>
+                                            <img src="imgs/p.png" alt="" class="product_img">
+                                            <div class="broduct_content p-2 mt-2">
+                                                <div class="flex-between">
+                                                    <h6 class="mb-1"> منتج </h6>
+                                                    <div class="quntityBorder">
+                                                        <span> الكمية : </span><span> 5 </span>
+                                                    </div>
+                                                </div>
+                                                <p class="text-muted mb-1"> <span>24*25</span><span>جرام</span></p>
+                                                <div class="d-flex gap-10 mb-1">
+                                                    <h6 class="main_color f-15"><span>12</span><span>ريال</span></h6>
+                                                    <div class="text-danger"><s><span>18</span> <span>ريال</span> </s>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center m-0 p-0 ">
+                    <div class="col-md-8 px-sm-1 ">
+                        <div class="shadow rad-5 p-3 m-0 mb-3">
+                            <h6 class="main_color mb-3"> تفاصيل الطلب </h6>
+                            <div class="flex-between mb-4">
+                                <div class="d-flex align-items-center gap-10">
+                                    <i class="fa-solid fa-wallet main_color f-30"></i>
+                                    <div>
+                                        <h6 class="mb-2">
+                                            وسيلة الدفع
+                                        </h6>
+                                        <div class="text-underline text-danger font-bolder cursor_pointer"
+                                            data-toggle="modal" data-target="#uploadImg">
+                                            ارفاق صورة الحوالة
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6>
+                                    حوالة بنكية
+                                </h6>
+                            </div>
+                            <!-- unpaid-cash -->
+                            <!-- <div class="flex-between mb-4">
+                                <div class="d-flex align-items-center gap-10">
+                                    <i class="fa-solid fa-wallet main_color f-30"></i>
+                                    <div>
+                                        <h6 class="mb-2">
+                                            وسيلة الدفع
+                                        </h6>
+                                        <div class="text-danger font-bolder cursor_pointer">
+                                            غير مدفوع
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6>
+                                    كاش
+                                </h6>
+                            </div> -->
+                            <div class="flex-between mb-4 ">
+                                <div class="d-flex gap-5 align-items-center">
+                                    <i class="fa-solid fa-location-dot main_color f-15"></i>
+                                    <h6 class="">
+                                        فرع الرياض
+                                    </h6>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-location-dot main_color f-15"></i>
+                                    <span class="main_color text-underline">
+                                        الرياض ، شارع الصندوق الاسود
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-10 mb-4">
+                                <i class="fa-regular fa-file main_color f-30"></i>
+                                <div>
+                                    <h6 class="mb-2">
+                                        الملاحظات
+                                    </h6>
+                                    <div class="text_gray font-bolder">
+                                        هذا النص هو مثال لنص ممكن ان يستبدل
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between mb-4">
+                                <h6>قيمة المشتريات </h6>
+                                <h6> <span> 5000 </span><span> ر.س </span></h6>
+                            </div>
+                            <div class="flex-between mb-4">
+                                <h6> رسوم التوصيل </h6>
+                                <h6>مجاني</h6>
+                            </div>
+                            <div class="flex-between mb-4">
+                                <h6> ضريبة القيمة المضافة </h6>
+                                <h6><span>40</span><span> ر.س </span></h6>
+                            </div>
+                            <h6 class="text-center text-underline  main_color cursor_pointer" data-toggle="modal"
+                                data-target="#cansel_order_1">
+                                الغاء الطلب
+                            </h6>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ________________ // footer // ________________ -->
+        <footer>
+            <div class="container">
+                <div class="footer-content s-space">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="mb-3"> من نحن</h4>
+                            <p class="text-muted mb-3"> هذا النص هو مثال لنص ممكن ان يستخدم هذا النص النص هو مثال لنص مم
+                                هذا
+                                النص هو مثال لنص ممكن ان يستخدم هذا النص النص هوكن ان يستخدم هذا النص مثال لنص ممكن ان
+                                يستخدم</p>
+                            <div class="d-flex gap-10 flex-wrap mb-3">
+                                <a href="https://apps.apple.com">
+                                    <img src="imgs/app-store.png" alt="app-store" class="storesImg">
+                                </a>
+                                <a href="https://play.google.com/store">
+                                    <img src="imgs/googleplay.png" alt="google-play" class="storesImg">
+                                </a>
+                            </div>
+                            <div class="mb-3 f-15">
+                                <span> الرقم الضريبي : </span> <span>123455</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="mb-3"> روابط هامة</h4>
+                            <ul class="d-flex flex-wrap">
+                                <li class="flex-b-50 mb-3 text-nowrap">
+                                    <a href="privacyـpolicy.html" class="main_color f-15"> سياسة الخصوصية</a>
+                                </li>
+                                <li class="flex-b-50 mb-3 text-nowrap">
+                                    <a href="terms&condition.html" class="main_color f-15"> الشروط والاحكام</a>
+                                </li>
+                                <li class="flex-b-50 mb-3 text-nowrap">
+                                    <a href="about_us.html" class="main_color f-15"> عن حمول تك </a>
+                                </li>
+                                <li class="flex-b-50 mb-3 text-nowrap">
+                                    <a href="contact_us.html" class="main_color f-15"> تواصل معنا </a>
+                                </li>
+                                <li class="flex-b-50 mb-3 text-nowrap">
+                                    <a href="provider.html" class="main_color f-15"> سجل معنا كمورد </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="mb-2"> طرق الدفع </h4>
+                            <div class="d-flex gap-10 flex-wrap align-items-center">
+                                <img src="imgs/mada.png" alt="payment" class="payment">
+                                <img src="imgs/visa.png" alt="payment" class="payment">
+                                <img src="imgs/mastercard-26149.png" alt="mada" class="payment">
+                                <img src="imgs/pay.png" alt="payment" class="payment">
+                                <img src="imgs/stc.png" alt="payment" class="payment">
+                                <img src="imgs/pay.png" alt="payment" class="payment">
+                                <!-- <img src="imgs/hand.png" alt="payment" class="payment">
+                        <img src="imgs/home.png" alt="payment" class="payment"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right py-3 d-flex justify-content-sm-between justify-content-center flex-wrap gap-30">
+                    <a href="index.html" class="main_color font-bolder">
+                        <h6> جميع الحقوق محفوظة لمؤسسة حمول تك @2023</h6>
+                    </a>
+                    <div class="d-flex gap-10 align-items-center">
+                        <a href="#">
+                            <img src="imgs/facebook.png" alt="" class="social">
+                        </a>
+                        <a href="#">
+                            <img src="imgs/twitter.png" alt="" class="social">
+                        </a>
+                        <a href="#">
+                            <img src="imgs/tiktok.png" alt="" class="social">
+                        </a>
+                        <a href="#">
+                            <img src="imgs/youtube.png" alt="" class="social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="uploadImg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body p-0 ">
+                        <div class="border-bottom p-3 mb-3">
+                            <h6 class="font-bolder"> ارفاق الحوالة </h6>
+                        </div>
+                        <form action="">
+                            <div class="form-group text-center">
+
+                                <label for="file" class="position-relative m-auto img_gallery transparent mb-0">
+                                    <div class="edit_icon">
+                                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                    </div>
+                                    <input type="file" onchange="previewFile(this)" id="file" hidden="">
+
+                                    <img id="imgPrev" src="" alt="userPic">
+                                </label>
+                                <label for="file" class="d-block">
+                                    <div class="f-15"> ارفاق الحوالة </div>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer ">
+                        <button type="button" class="main_btn btn w-75 m-auto" data-dismiss="modal"> ارفاق الحوالة
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="cansel_order_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body p-0 ">
+                        <div class="border-bottom p-3">
+                            <h6> سبب الغاء الطلب </h6>
+                        </div>
+                        <div class="p-3">
+                            <label class="m-0 d-flex gap-10  mb-3" for="order1">
+                                <input type="radio" class="inputCircleShape" id="order1" name="orders" hidden>
+                                <div class="circleRadioShape">
+                                    <span> </span>
+                                </div>
+                                <h6> لست بحاجة الي الطلب </h6>
+                            </label>
+
+                            <label class="m-0 d-flex gap-10 mb-3" for="order2">
+                                <input type="radio" class="inputCircleShape" id="order2" name="orders" hidden>
+                                <div class="circleRadioShape">
+                                    <span> </span>
+                                </div>
+                                <h6> تعديل الطلب </h6>
+                            </label>
+
+                            <label class="m-0 d-flex gap-10 mb-3" for="order3">
+                                <input type="radio" class="inputCircleShape" id="order3" name="orders" hidden>
+                                <div class="circleRadioShape">
+                                    <span> </span>
+                                </div>
+                                <h6> سبب اخر </h6>
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer gap-10">
+                        <button class="btn main_btn w-50" data-dismiss="modal" data-toggle="modal"
+                            data-target="#certainCancelOrder"> إالغاء الطلب </button>
+                        <button data-dismiss="modal" class="btn main_btn transparent_btn w-50"> تراجع</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal-2 -->
+        <div class="modal fade" id="certainCancelOrder" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-body text-center">
+                        <i class="fa-solid fa-circle-check main_color modal_icon"></i>
+
+                        <h6 class="font-bolder"> تم إالغاء طلبك بنجاح </h6>
+                    </div>
+                    <div class="modal-footer ">
+                        <a href="index.html" class="main_btn btn w-75 m-auto"> الرئيسية
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ________________ // loader // ________________ -->
+        <div class="loader">
+            <img src="imgs/logo.png" alt="" class="logoWhite wow  animate__animated animate__jackInTheBox">
+        </div>
+        <!-- _______________ // filter-modal // _______________ -->
+        <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-7">
+                            <div class="modal-body">
+                                <h6 class="main_color mb-3"> <span class="m-end-5"> ترتيب المنتجات </span> <i
+                                        class="fa-solid fa-arrow-up-wide-short"></i></h6>
+                                <form id="filterForm" action="#">
+                                    <div class="form-group">
+                                        <label for="name"> المدينة</label>
+                                        <select class="select2 form-control form-input" name="state">
+                                            <option value="AL"> المدينة </option>
+                                            <option value="WY"> المدينة </option>
+                                            <option value="WY"> المدينة </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="name"> العلامة التجارية</label>
+                                        <select class="select2 form-control form-input" name="state">
+                                            <option value="AL"> براند </option>
+                                            <option value="WY"> براند </option>
+                                            <option value="WY"> براند </option>
+                                        </select>
+                                    </div>
+                                    <label class="d-flex gap-5 align-items-center form-group">
+                                        <input type="checkbox" class="checkbox" hidden>
+                                        <div class="checkboxShape">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <span>
+                                            الاكثر مبيعا
+                                        </span>
+                                    </label>
+                                    <button type="button" form="filterForm" class="btn main-script w-100 main_btn"
+                                        data-dismiss="modal">
+                                        تأكيد</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/select2.min.js"></script>
+        <!-- // main-script //  -->
+        <script src="js/script.js"></script>
+        <script>
+            ///////// $$ add icon to btn $$ //////////
+            const mediaQuery = window.matchMedia('(max-width: 768px)');
+            function handleTabletChange(e) {
+                var newLogIn = document.querySelector('.register');
+                var login = document.querySelector('.logIn');
+                let userDropdown = document.querySelector('.userDropdown')
+                if (newLogIn && login) {
+                    if (e.matches) {
+                        var newLoginIcon = `<i class="fa-solid fa-right-to-bracket"></i>`;
+                        var userIcon = `<i class="fa-solid fa-user f-15"></i>`;
+                        newLogIn.innerHTML = newLoginIcon;
+                        login.innerHTML = userIcon;
+                        newLogIn.style.width = '30px';
+                        newLogIn.style.height = '30px';
+                        newLogIn.style.borderRadius = '50%'
+                        newLogIn.style.padding = '18px'
+
+                        login.style.width = '30px';
+                        login.style.height = '30px';
+                        login.style.borderRadius = '50%'
+                        login.style.padding = '18px'
+                    } else {
+                        newLogIn.innerHTML = 'حساب  جديد';
+                        login.innerHTML = 'تسجيل الدخول ';
+                    }
+                } else {
+                    if (e.matches) {
+                        userDropdown.querySelector('p').style.display = 'none'
+
+                    } else {
+                        userDropdown.querySelector('p').style.display = 'block'
+
+                    }
+
+                }
+            }
+            mediaQuery.addListener(handleTabletChange)
+            handleTabletChange(mediaQuery)
+            ///////// $$ add icon to btn $$ //////////
+            let target = 0;
+            let collapse = 0;
+            function handleNav(e) {
+                if (e.matches) {
+                    document.querySelectorAll('.Products_nav  .dropdown').forEach(el => {
+                        el.classList.remove('dropdown')
+                        el.classList.add('text-center')
+                        el.classList.add('cursor_pointer')
+
+                        let p = el.querySelectorAll('.dropdown-toggle')
+                        p.forEach((menu) => {
+                            menu.classList.remove('dropdown-toggle')
+                            menu.setAttribute("data-toggle", "collapse");
+                            let dataTarget = `#collapseExample${target++}`;
+                            console.log(dataTarget)
+                            menu.setAttribute("data-target", `${dataTarget}`);
+                            menu.setAttribute("aria-controls", "collapseExample");
+                        })
+                        // data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                        let dropdownToggle = el.querySelectorAll('.dropdown-menu')
+                        dropdownToggle.forEach((menu) => {
+                            menu.classList.remove('dropdown-menu')
+                            let id = `collapseExample${collapse++}`;
+                            menu.classList.add('collapse')
+                            menu.id = `${id}`
+
+                        })
+                    })
+                } else {
+                    return
+                }
+            }
+            mediaQuery.addListener(handleNav)
+
+            handleNav(mediaQuery);
+            document.querySelector('.menuBar').onclick = function () {
+                document.querySelector('.Products_nav').classList.add('active')
+            }
+            document.querySelector('.closeMenu').onclick = function () {
+                document.querySelector('.Products_nav').classList.remove('active')
+
+            }
+        </script>
+        <script>
+            function
+                previewFile(input) {
+                var preview = input.nextElementSibling
+                console.log(preview)
+                var file = input.files[0];
+                var reader = new FileReader();
+
+                reader.onloadend = function () {
+                    preview.src = reader.result;
+                }
+
+                if (file) {
+                    reader.readAsDataURL(file);
+                } else {
+                    preview.src = "";
+                }
+            }
+            // ///////////////////////////////////
+            $(document).ready(function () {
+                $('.select2').select2();
+            });
+            ///////// $$ toggle fav$$ //////////
+            document.querySelectorAll('.fa-heart.like').forEach(el => {
+                el.onclick = function () {
+                    this.classList.toggle("text-danger")
+
+                }
+            })
+
+            let count = 0
+            // var displayCout = document.querySelector('.counterNum');
+            // displayCout.innerHTML = 0;
+            document.querySelectorAll('.increment').forEach((el) => {
+                el.onclick = function (e) {
+                    if (this.nextElementSibling.innerHTML == 20) {
+                        return
+                    } else {
+                        this.nextElementSibling.innerHTML = `${count++}`
+
+                    }
+                }
+
+            })
+            document.querySelectorAll('.decrement').forEach((el) => {
+                el.onclick = function () {
+
+                    if (this.previousElementSibling.innerHTML <= 0) {
+                        return
+                    } else {
+                        this.previousElementSibling.innerHTML = `${count--}`
+
+                    }
+                }
+
+            })
+
+            // document.querySelector('.showMore').nextElementSibling.querySelector('.row').style.transform = 'translateY(-100%)';
+            document.querySelector('.showMore').onclick = function () {
+                document.querySelector('.containMoreCard').classList.toggle('active');
+                if (document.querySelector('.containMoreCard').classList.contains('active')) {
+                    this.classList.add('active')
+                } else {
+                    this.classList.remove('active')
+                }
+            }
+
+        </script>
+
+</body>
+
+</html>
