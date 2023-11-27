@@ -1263,19 +1263,14 @@ fieldset {
     @extend %flex-dir-start;
 }
 
-// table
+/*  ------------------------- // table // ------------------------- // */
+
 table {
     border-collapse: collapse;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-
-//   table,
-//   table th,
-//   table td {
-//     border: 1px solid #ccc;
-//   }
 
 table th,
 table td {
@@ -1288,17 +1283,19 @@ table th {
     user-select: none;
 }
 
-table thead , table tbody {
+table thead,
+table tbody {
     color: black;
     border-radius: 10px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     padding: 10px;
 }
+
 table thead {
     transform: translateY(-15px);
 }
 
-.button-default.xls{
+.button-default.xls {
     background-color: #fff;
     color: #0b737f;
     border: 1px solid #0b737f;
@@ -1309,6 +1306,4 @@ table thead {
     padding: 10px 0;
     width: 50%;
     font-size: 15px;
-    // position: absolute;
-    // b
 }

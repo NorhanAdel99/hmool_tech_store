@@ -1877,6 +1877,7 @@ fieldset {
   animation-iteration-count: infinite !important;
 }
 
+/*  ------------------------- // table // ------------------------- // */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -1897,7 +1898,8 @@ table th {
           user-select: none;
 }
 
-table thead, table tbody {
+table thead,
+table tbody {
   color: black;
   border-radius: 10px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);

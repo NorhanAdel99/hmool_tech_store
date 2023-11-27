@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/select2.min.css">
-    <link rel="stylesheet" href="css/flatpickr.min.css">
     <link rel="stylesheet" href="css/tableexport.min.css">
     <link rel="stylesheet" href="sass/main.css">
     <title>Document</title>
@@ -820,55 +819,6 @@
             $(document).ready(function () {
                 $('.select2').select2();
             });
-        </script>
-        <script>
-
-            let flatpickr_function = (parent_flatpicker) => {
-                var startDateInput = parent_flatpicker.find(".start-date");
-                var endDateInput = parent_flatpicker.find(".end-date");
-
-
-                // Initialize the Flatpickr datepicker for the start date input
-                startDateInput.flatpickr({
-                    disableMobile: true,
-                    dateFormat: "Y-m-d",
-                    onChange: function (selectedDates, dateStr, instance) {
-                        console.log(dateStr)
-                        document.querySelector('.one').value = dateStr
-                        // Set the minimum date for the end date input to be the selected start date
-                        endDateInput.flatpickr({
-                            minDate: dateStr,
-                            disableMobile: true,
-                            onChange: function (selectedDates, dateStr, instance) {
-                                console.log(dateStr)
-                                document.querySelector('.two').value = dateStr
-                            }
-                        });
-                    }
-                });
-
-                // Initialize the Flatpickr datepicker for the end date input
-                endDateInput.flatpickr({
-                    disableMobile: true,
-                    dateFormat: "Y-m-d",
-                    onChange: function (selectedDates, dateStr, instance) {
-                        // Set the maximum date for the start date input to be the selected end date
-                        startDateInput.flatpickr({
-                            maxDate: dateStr,
-                            disableMobile: true,
-                        });
-                    }
-                });
-
-                parent_flatpicker.find(".select-plugin").select2({
-                    minimumResultsForSearch: Infinity,
-                });
-            }
-
-            flatpickr_function($(".date-inputs")); // Initial call
-            document.querySelector('.certainBtn').onclick = function () {
-                document.querySelector('.inputsDate').classList.remove('none')
-            }
         </script>
         <!-- export as pdf -->
         <script>
